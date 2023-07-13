@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        body{
+            background-color: rgb(186, 186, 186);
+        }
+        h1{
+            box-shadow: 2px 5px 9px rgba(0, 0, 0, 0.401);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            border-radius: 10px;
+            background-color: lightgray;
+            padding: 10px;
+            border: 20px solid black;
+
+            border-image: url('borda.png') 27 round;
+
+            /* border-image-source: url('borda.png');
+            border-image-slice: 27;
+            border-image-repeat: round ; */
+        }
+    </style>
+</head>
+<body>
+        <h1>Teste de bordas</h1>
+</body>
+</html>

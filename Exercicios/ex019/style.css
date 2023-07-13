@@ -1,0 +1,43 @@
+/* Em CSS id"" é representado com '#'  */
+/* Em CSS class"" é representado com '.' */
+
+/* Em CSS ' : ' significa uma PSEUDO-CLASS */
+/* Em CSS ' :: ' significa um PSEUDO-ELEMENT*/
+/* Em CSS ' > ' significa Children (filho / devira-de) */
+
+@charset "UTF-8";
+body{
+    background-color: rgb(85, 84, 84);
+}
+#principal{
+    text-shadow: 1px 1px 5px black;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #042940, #005C53);
+    text-align: center;
+}
+h1{
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgb(255, 255, 255);
+    text-indent: 25px;
+}
+.basico{
+    text-shadow: 1px 1px 5px black;
+    color: red;
+}
+.intermediario{
+    text-shadow: 1px 1px 5px black;
+    margin-left: 250px;
+    color: green;
+}
+.avançado{
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    color: #a561e5;
+} 
+.destaque{
+    background-color: #005C53;
+}

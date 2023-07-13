@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1{
+            /* BOX-LEVEL */
+            text-align: center;
+            background-color: lightgreen;
+
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid black;
+
+           padding: 10px;
+
+            margin: 20px auto 40px auto;
+            
+            /* outline: 5px dashed salmon ; */
+        }
+        a{
+            /* INLINE-LEVEL */
+            padding: 3px;
+            color: black;
+            background-color: lightgreen;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+            background-color: rgb(122, 211, 122);
+        }
+        a:active{
+            background-color: rgb(50, 97, 50);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de caixa Box-level</h1>
+        <p>Paragrafos tambem são exemplos de box-level, mas os <a href="https://www.twitch.tv/" target="_blank">links são exemplos de inline-level,</a> vamos ver como tudo isso funciona.</p>
+    </main>
+</body>
+</html>

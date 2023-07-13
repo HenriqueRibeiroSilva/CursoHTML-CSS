@@ -1,0 +1,11 @@
+body{
+    font: normal 12pt arial;
+    background-color: rgb(201, 199, 199);
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 15px;
+    padding: 2;
+    margin-top: 8px;
+}
