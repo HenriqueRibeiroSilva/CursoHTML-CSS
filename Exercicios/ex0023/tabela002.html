@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-        
+        <!--ANATOMIA DAS TABELAS
+        THEAD: TR, TD, TH
+        TBODY: TR, TD, TH
+        TFOOT: TR, TD, TH     
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>Populção</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <th>São Paulo</th>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <th>Minas Gerais</th>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <th>Rio de Janeiro</th>
+                    <td class="num">17.264.943</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                    <tr>
+                        <th>Total de Populção</th>
+                        <td>000000</td>
+                    </tr>
+            </tfoot>
+        </table>
+
 </body>
 </html>
