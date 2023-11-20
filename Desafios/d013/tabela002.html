@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da tabela 002</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 300px;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th.lightgray{
+            background-color: lightgray;
+        }
+        th.gray{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+        <h1>Desafio da  tabela 002</h1>
+
+        <table>
+            <tr>
+                <th colspan="4" class="gray">A</th>
+                <th rowspan="4" class="gray">B</th>
+            </tr>
+            <tr>
+                <th rowspan="4" class="gray">C</th>
+                <th class="lightgray">D</th>
+                <th>E</th>
+                <th class="lightgray">F</th>
+            </tr>
+            <tr>
+                   <th>G</th>
+                   <th class="lightgray">H</th>
+                   <th>I</th> 
+            </tr>
+            <tr>
+                <th class="lightgray">J</th>
+                <th>L</th>
+                <th class="lightgray">M</th>
+            </tr>
+            <tr>
+                <th colspan="4" class="gray">N</th>
+            </tr>
+        </table>
+</body>
+</html>
