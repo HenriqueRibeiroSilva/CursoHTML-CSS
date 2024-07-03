@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        header{
+            background-color: rgb(56, 56, 56);
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin: 10px;
+        }
+        header>h1{
+            font-size: 2,5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+        }
+        fieldset{
+            margin: 20px;
+        }
+        label{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    <fieldset>
+        <legend>Dados Gerais</legend>
+        <form action="#" method="post" autocomplete="on">
+            <p>
+                <!-- Nome -->
+                 <label for="inome">Nome:</label>
+                 <input type="text" name="nome" id="inome" size="50" required>
+                 <!-- Idade -->
+                  <label for="iidade">Ano de nascimento:</label>
+                  <input type="number" name="idade" id="iidade" oninput="somaidade()" required>
+                  <label for="outidade">Idade:</label>
+                  <output id="outidade">0</output>
+                  <!-- email -->
+                   <label for="igmail">| Email:</label>
+                   <input type="email" name="gmail" id="igmail" size="50" required>
+            </p>
+               <p>
+                   <!-- Telefone -->
+                    <label for="ifone">Telefone:</label>
+                    <input type="tel" name="fone" id="ifone" required placeholder="12 010101010" minlength="12" maxlength="12">
+               </p>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <form action="#" method="post">
+            <p>
+                <!-- cep -->
+                 <label for="icep">CEP:</label>
+                 <input type="number" name="cep" id="icep" required minlength="8" maxlength="8">
+                 <!-- tipo -->
+                  <label for="tipo">Tipo</label>
+                  <select name="tipo" id="itipo">
+                    <option value="Selecionar">Selecionar</option>
+                    <option value="Rural">Rural</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Condominio">Condominio</option>
+                    <option value="Apartamento">Apartamento</option>
+                  </select>
+                  <!-- logradouro -->
+                   <label for="ilogra">Logradouro:</label>
+                   <input type="text" name="logra" id="ilogra" required minlength="3" maxlength="35" size="50">
+                   <label for="inumero">Numero:</label>
+                   <input type="number" name="numero" id="inumero" required min="0">
+            </p>
+               <p id="paragrafo_extra">
+                   oi
+               </p>
+        </form>
+    </fieldset>
+<!-- Script -->
+    <script>
+        if (itipo==("Apartamento")) {
+            paragrafo_extra.innerHTML = "Certo"
+        } else if(itipo==("selecionar")){
+            paragrafo_extra.innerHTML = "Errado"
+        }
+
+        function somaidade(){
+            let ano = new Date().getFullYear()
+            outidade.innerHTML=(Number(ano)-Number(iidade.value))
+        }
+    </script>
+</body>
+</html>''
